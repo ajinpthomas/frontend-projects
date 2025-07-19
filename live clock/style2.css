@@ -1,0 +1,23 @@
+body{
+    background-image: url(iMacPro5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5em;
+    font-weight: bold;
+color: azure;
+    text-align: center;
+    backdrop-filter: blur(1px);
+width:100%;
+}
