@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #1B244A;
+    background: linear-gradient(145deg, #1B244A 0%, #121832 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 40px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    background: rgba(0,0,0,0.2);
+}
+
+h1.team-name {
+    color: #EEEEEE;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.team {
+    width: 45%;
+}
+
+h2.team-name {
+    color: #EEEEEE;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.score {
+    background: #000000;
+    color: #F94F6D;
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    text-shadow: 0 0 20px rgba(249,79,109,0.4);
+    font-family: 'Digital-7', monospace;
+    border: 2px solid #333;
+}
+
+.score-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+button {
+    background: rgba(27, 36, 74, 0.8);
+    color: #9AABD8;
+    border: 2px solid #9AABD8;
+    padding: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #9AABD8;
+    color: #1B244A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.new-game {
+    margin-top: 40px;
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    background: rgba(249,79,109,0.1);
+    border-color: #F94F6D;
+    color: #F94F6D;
+}
+
+.new-game:hover {
+    background: #F94F6D;
+    color: #EEEEEE;
+}
+
+@media (max-width: 768px) {
+    .scoreboard {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    h1.team-name {
+        font-size: 2rem;
+    }
+    
+    h2.team-name {
+        font-size: 2rem;
+    }
+    
+    .score {
+        font-size: 4rem;
+    }
+}
